@@ -1,6 +1,6 @@
 React		= require('react/addons');
 TestUtils	= React.addons.TestUtils;
-ReactTabs	= require('../lib/main');
+ReactTabs	= require('../index');
 Tab			= ReactTabs.Tab;
 Tabs		= ReactTabs.Tabs;
 TabList		= ReactTabs.TabList;

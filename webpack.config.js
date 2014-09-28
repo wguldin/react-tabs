@@ -1,8 +1,14 @@
 module.exports = {
-	entry: './example/main.js',
+	entry: './index.js',
 	output: {
-		filename: './build/bundle.js'
+		filename: './dist/react-tabs.js',
+    sourceMapFilename: './dist/react-tabs.map',
+    library: 'ReactTabs',
+    libraryTarget: 'umd'
 	},
+  externals: {
+    'react/addons': 'React'
+  },
 	module: {
 		loaders: [
 			{test: /\.js$/, loader: 'jsx-loader'}

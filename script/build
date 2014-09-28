@@ -1,2 +1,8 @@
 #!/bin/sh
-webpack --watch --devtool inline-source-map
+webpack --devtool source-map
+
+node_modules/.bin/uglifyjs dist/react-tabs.js \
+  --output dist/react-tabs.min.js \
+  --source-map dist/react-tabs.min.map \
+  --source-map-url react-tabs.min.map \
+  --compress warnings=false
